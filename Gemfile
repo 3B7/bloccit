@@ -24,4 +24,4 @@ gem 'newrelic_rpm'
 gem 'jquery-rails'
 gem 'faker'
 gem 'devise'
-
+gem 'cancan'
