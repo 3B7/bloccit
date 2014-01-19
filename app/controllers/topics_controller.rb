@@ -36,3 +36,4 @@ class TopicsController < ApplicationController
       render :edit
     end
   end
+end
