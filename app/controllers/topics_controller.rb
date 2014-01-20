@@ -5,6 +5,7 @@ class TopicsController < ApplicationController
 
   def new
     @topic = Topic.new
+    authorize! :create, @topic, message: "You need to be an admin to do that."
   end
 
   def show
@@ -14,9 +15,10 @@ class TopicsController < ApplicationController
 
   def edit
     @topic = Topic.find(params[:id])
+    authorize! :update, @topic, message: "You need to be an admin to do that."
   end
 
-    def create
+  def create
     @topic = Topic.new(params[:topic])
     authorize! :create, @topic, message: "You need to be an admin to do that."
     if @topic.save
