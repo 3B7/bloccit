@@ -31,7 +31,7 @@ class Ability
     # https://github.com/ryanb/cancan/wiki/Defining-Abilities
  if user.role? :member
       can :manage, Post, :user_id => user.id
-      can :manage, Comment, :user_id => user.id
+      can :manage, Comment, :user_id => user_id
     end
 
     # Moderators can delete any post
