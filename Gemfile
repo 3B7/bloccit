@@ -10,6 +10,12 @@ group :production do
   gem 'rails_12factor'
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails','~>4.0'
+end
+
+
 group :development do
   gem 'sqlite3'
 end
