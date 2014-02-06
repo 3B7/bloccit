@@ -2,8 +2,11 @@
   <div class="span8">
     <h1>Popular Users</h1>
     <p class="lead">Most active users</p>
+    <div class="current-popular-users">
     <%= render partial: 'users/user', collection: @users %>
     <%= will_paginate @users %>
+  </div>
+  <button>Hide</button>
   </div>
   <div class="span4">
   </div>
