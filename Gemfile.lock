@@ -219,7 +219,7 @@ DEPENDENCIES
   figaro
   fog
   jquery-rails
-  mini_magick
+  mini_magick (~> 3.5.0)
   newrelic_rpm
   omniauth-facebook
   pg
